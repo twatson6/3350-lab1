@@ -7,7 +7,8 @@
 class MyScene : public Scene
 {
     protected:
-
+		int x = 0;
+		int y = 0;
         // Called once when the scene begins.
         virtual void init()
         {
@@ -22,7 +23,10 @@ class MyScene : public Scene
         virtual void update()
         {
             // Your code here
-
+            clearBoard();
+            board[y][x] = 'X';
+			x++;
+			y++;
 
 
 
