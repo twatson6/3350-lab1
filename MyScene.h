@@ -7,13 +7,8 @@
 class MyScene : public Scene
 {
     protected:
-<<<<<<< HEAD
         int x = 0;
         int y = 0;
-=======
-		int x = 0;
-		int y = 0;
->>>>>>> 031d4173097b559fe36629dc680db2bbff2c3a3a
         // Called once when the scene begins.
         virtual void init()
         {
@@ -27,10 +22,6 @@ class MyScene : public Scene
         // Called once every frame. 
         virtual void update()
         {
-            clearBoard();
-            board[y][x] = 'X';
-            x++;
-            y++;
             // Your code here
             clearBoard();
             board[y][x] = 'X';
